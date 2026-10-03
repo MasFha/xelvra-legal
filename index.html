@@ -1,1 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
+  <meta
+    name="description"
+    content="Official legal information and open-source notices for Xelvra."
+  >
+
+  <title>Xelvra - Legal</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+
+      --bg: #f8f9ff;
+      --surface: #ffffff;
+      --surface-hover: #f1f2f8;
+      --text: #1a1b20;
+      --muted: #5f6068;
+      --outline: #c7c7d0;
+      --accent: #445e91;
+      --accent-container: #d9e2ff;
+      --on-accent-container: #001a41;
+
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111318;
+        --surface: #1a1c22;
+        --surface-hover: #22242b;
+        --text: #e2e2e9;
+        --muted: #c3c6d0;
+        --outline: #44474f;
+        --accent: #adc6ff;
+        --accent-container: #294777;
+        --on-accent-container: #d9e2ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(880px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 42px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 48px;
+      height: 48px;
+
+      padding: 0 16px;
+
+      border-radius: 16px;
+
+      background: var(--accent-container);
+      color: var(--on-accent-container);
+
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    h1 {
+      margin: 24px 0 8px;
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      max-width: 620px;
+      margin: 0;
+
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .developer {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    main {
+      padding-bottom: 56px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 220px;
+      padding: 24px;
+
+      border: 1px solid var(--outline);
+      border-radius: 20px;
+
+      background: var(--surface);
+      color: inherit;
+
+      text-decoration: none;
+
+      transition:
+        background .15s ease,
+        transform .15s ease;
+    }
+
+    .card:hover {
+      background: var(--surface-hover);
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 44px;
+      height: 44px;
+
+      margin-bottom: 24px;
+
+      border-radius: 14px;
+
+      background: var(--accent-container);
+      color: var(--on-accent-container);
+
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .open {
+      margin-top: auto;
+      padding-top: 24px;
+
+      color: var(--accent);
+      font-weight: 600;
+      font-size: .9rem;
+    }
+
+    .about {
+      margin-top: 42px;
+      padding-top: 32px;
+
+      border-top: 1px solid var(--outline);
+    }
+
+    .about h2 {
+      margin-top: 0;
+    }
+
+    .about p {
+      max-width: 700px;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 0 42px;
+
+      border-top: 1px solid var(--outline);
+
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding-top: 48px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <div class="brand" aria-hidden="true">
+      X
+    </div>
+
+    <h1>Xelvra</h1>
+
+    <p class="subtitle">
+      Privacy, terms, and open-source information for the
+      Xelvra Android VPN client.
+    </p>
+
+    <p class="developer">
+      Developed by MDevz
+    </p>
+
+  </div>
+</header>
+
+
+<main class="container">
+
+  <section class="cards" aria-label="Legal documents">
+
+    <a class="card" href="privacy.html">
+
+      <div class="icon" aria-hidden="true">
+        P
+      </div>
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        Learn how Xelvra handles local application data,
+        VPN traffic, network requests, and privacy.
+      </p>
+
+      <span class="open">
+        Read Privacy Policy →
+      </span>
+
+    </a>
+
+
+    <a class="card" href="terms.html">
+
+      <div class="icon" aria-hidden="true">
+        T
+      </div>
+
+      <h2>Terms of Use</h2>
+
+      <p>
+        Information about responsible use, third-party
+        services, VPN configurations, and software availability.
+      </p>
+
+      <span class="open">
+        Read Terms of Use →
+      </span>
+
+    </a>
+
+
+    <a class="card" href="licenses.html">
+
+      <div class="icon" aria-hidden="true">
+        OS
+      </div>
+
+      <h2>Open Source Notices</h2>
+
+      <p>
+        Attribution and license information for open-source
+        software and data used by Xelvra.
+      </p>
+
+      <span class="open">
+        View Open Source Notices →
+      </span>
+
+    </a>
+
+  </section>
+
+
+  <section class="about">
+
+    <h2>About Xelvra</h2>
+
+    <p>
+      Xelvra is an Android VPN client developed by MDevz.
+      It provides tools for creating and importing connection
+      profiles and establishing VPN connections using the
+      Xray networking engine.
+    </p>
+
+    <p>
+      Xelvra does not itself provide or operate VPN or proxy
+      servers. Users supply or select the connection
+      configuration used by the application.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+    Xelvra &copy; 2026 MDevz
+  </div>
+
+</footer>
+
+</body>
+</html>
